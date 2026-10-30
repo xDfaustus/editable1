@@ -37,9 +37,7 @@
             color: #f3f4f6;
             overflow-x: hidden;
         }
-        .cinzel-font {
-            font-family: 'Cinzel', serif;
-        }
+        .cinzel-font { font-family: 'Cinzel', serif; }
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #0a0a0c; }
         ::-webkit-scrollbar-thumb { background: #be123c; border-radius: 3px; }
@@ -99,26 +97,23 @@
         </div>
         <div class="flex items-center gap-3">
             <button id="openImageManager" type="button" class="text-xs tracking-widest border border-rose-700/60 hover:bg-rose-950/60 text-rose-300 px-3 py-2 rounded transition">
-                EDITAR CONTENIDO (GITHUB)
+                CAMBIAR ENLACES (IMGBB)
             </button>
         </div>
         <div class="hidden md:flex items-center space-x-6 text-sm text-gray-400">
-            <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-rose-600 animate-pulse"></span> SYSTEM: LIVE GITHUB SYNC</span>
+            <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-rose-600 animate-pulse"></span> SYSTEM: DIRECT LINK MANAGER</span>
             <span class="font-mono text-rose-500">07042026</span>
         </div>
     </header>
 
     <main class="relative z-20 flex-1 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 md:p-12 items-center">
-        
         <div class="lg:col-span-5 flex flex-col justify-center space-y-6">
             <div class="space-y-2">
                 <div class="flex items-center space-x-3">
                     <span class="text-xs font-bold text-rose-500 border-l-2 border-rose-600 pl-2">02</span>
                     <span class="text-xs uppercase tracking-widest text-rose-400 font-semibold bg-rose-950/40 px-3 py-1 rounded border border-rose-900/50">弗洛洛 · Symphony of Beyond</span>
                 </div>
-                <h2 class="cinzel-font text-4xl md:text-6xl font-extrabold tracking-wide text-white drop-shadow-lg">
-                    Phrolova
-                </h2>
+                <h2 class="cinzel-font text-4xl md:text-6xl font-extrabold tracking-wide text-white drop-shadow-lg">Phrolova</h2>
                 <div class="inline-block bg-gradient-to-r from-rose-900 via-rose-800 to-rose-950 border-l-4 border-rose-500 px-6 py-3 shadow-2xl my-2">
                     <span class="cinzel-font text-2xl md:text-3xl font-bold tracking-widest text-white">动态壁纸</span>
                 </div>
@@ -141,12 +136,11 @@
                     <span>Alternar Hilos Rojos</span>
                 </button>
 
-                <!-- Dynamic Audio Player -->
                 <div id="musicPlayer" class="w-full max-w-xl rounded-xl border border-rose-900/50 bg-black/50 backdrop-blur-md p-4 shadow-xl shadow-rose-950/20">
                     <div class="flex items-center justify-between gap-3 mb-3">
                         <div class="min-w-0">
                             <p class="text-[10px] uppercase tracking-[.28em] text-rose-400">Fractsidus audio system</p>
-                            <p id="trackName" class="text-sm font-bold text-white truncate">Cargando pistas...</p>
+                            <p id="trackName" class="text-sm font-bold text-white truncate">Track 01</p>
                             <p id="playerStatus" class="text-[10px] text-gray-500">Listo para reproducir</p>
                         </div>
                         <span class="text-rose-500 text-xs font-mono shrink-0">♫ WUWA</span>
@@ -175,128 +169,80 @@
         </div>
 
         <div class="lg:col-span-7 relative min-h-[450px] md:min-h-[550px] flex items-center justify-center">
-            <div id="centralPin" class="absolute z-30 w-6 h-6 rounded-full bg-red-600 shadow-xl shadow-red-500/80 border-2 border-white top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 glow-pulse cursor-pointer transition-transform hover:scale-125" title="Nodo Central Fractsidus"></div>
+            <div id="centralPin" class="absolute z-30 w-6 h-6 rounded-full bg-red-600 shadow-xl shadow-red-500/80 border-2 border-white top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 glow-pulse cursor-pointer transition-transform hover:scale-125"></div>
 
-            <div class="polaroid absolute top-0 right-4 md:right-10 w-48 md:w-64 bg-white p-3 pb-6 rounded shadow-2xl rotate-3 cursor-pointer" data-id="1">
+            <div class="polaroid absolute top-0 right-4 md:right-10 w-48 md:w-64 bg-white p-3 pb-6 rounded shadow-2xl rotate-3 cursor-pointer">
                 <div class="overflow-hidden bg-black aspect-[4/3] rounded-sm relative">
-                    <img id="polaroid-img-1" src="https://images2.minutemediacdn.com/image/upload/c_crop%2Cw_1836%2Ch_1032%2Cx_0%2Cy_0/c_fill%2Cw_1440%2Car_16%3A9%2Cf_auto%2Cq_auto%2Cg_auto/images/voltaxMediaLibrary/mmsport/dbltap_en_international_web/01jwgmjbsmapb9164xfs.jpg" alt="Phrolova portrait" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-2">
-                        <span class="text-xs text-rose-300 font-mono">Symphony I</span>
-                    </div>
-                </div>
-                <div class="mt-3 flex justify-between items-center px-1">
-                    <span class="text-xs font-bold font-mono text-zinc-800">#01-WAVE</span>
-                    <span class="w-2 h-2 rounded-full bg-rose-600"></span>
+                    <img id="polaroid-img-1" src="https://images2.minutemediacdn.com/image/upload/c_crop%2Cw_1836%2Ch_1032%2Cx_0%2Cy_0/c_fill%2Cw_1440%2Car_16%3A9%2Cf_auto%2Cq_auto%2Cg_auto/images/voltaxMediaLibrary/mmsport/dbltap_en_international_web/01jwgmjbsmapb9164xfs.jpg" alt="Phrolova portrait" class="w-full h-full object-cover">
                 </div>
             </div>
 
-            <div class="polaroid absolute top-24 left-2 md:left-6 w-40 md:w-52 bg-white p-3 pb-5 rounded shadow-2xl -rotate-6 cursor-pointer" data-id="2">
+            <div class="polaroid absolute top-24 left-2 md:left-6 w-40 md:w-52 bg-white p-3 pb-5 rounded shadow-2xl -rotate-6 cursor-pointer">
                 <div class="overflow-hidden bg-black aspect-square rounded-sm relative">
-                    <img id="polaroid-img-2" src="https://shapes.inc/api/public/avatar/phrolovawutheringwaves" alt="Phrolova gaze" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="mt-2 text-center">
-                    <span class="text-[10px] tracking-wider uppercase font-bold text-zinc-600">Fractsidus Gaze</span>
+                    <img id="polaroid-img-2" src="https://shapes.inc/api/public/avatar/phrolovawutheringwaves" alt="Phrolova gaze" class="w-full h-full object-cover">
                 </div>
             </div>
 
-            <div class="polaroid absolute bottom-4 left-1/4 -translate-x-1/4 w-48 md:w-60 bg-white p-3 pb-6 rounded shadow-2xl rotate-2 cursor-pointer" data-id="3">
+            <div class="polaroid absolute bottom-4 left-1/4 -translate-x-1/4 w-48 md:w-60 bg-white p-3 pb-6 rounded shadow-2xl rotate-2 cursor-pointer">
                 <div class="overflow-hidden bg-black aspect-[16/10] rounded-sm relative">
-                    <img id="polaroid-img-3" src="https://images.rpgsite.net/image/da49c9a1/155213/original/wuthering-waves_20250718_phrolova-2.jpg" alt="Phrolova violin" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="mt-3 flex justify-between items-center text-[11px] text-zinc-600 font-mono px-1">
-                    <span>STRINGS OF FATE</span>
-                    <span>07.04</span>
+                    <img id="polaroid-img-3" src="https://images.rpgsite.net/image/da49c9a1/155213/original/wuthering-waves_20250718_phrolova-2.jpg" alt="Phrolova violin" class="w-full h-full object-cover">
                 </div>
             </div>
 
-            <div class="polaroid absolute bottom-12 right-2 md:right-12 w-44 md:w-56 bg-white p-3 pb-6 rounded shadow-2xl rotate-6 cursor-pointer" data-id="4">
+            <div class="polaroid absolute bottom-12 right-2 md:right-12 w-44 md:w-56 bg-white p-3 pb-6 rounded shadow-2xl rotate-6 cursor-pointer">
                 <div class="overflow-hidden bg-black aspect-[4/3] rounded-sm relative">
-                    <img id="polaroid-img-4" src="https://images.rpgsite.net/image/da49c9a1/155211/original/wuthering-waves_20250718_phrolova-1.jpg" alt="Phrolova beyond" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="mt-3 flex justify-between items-center text-[10px] font-mono text-zinc-700 px-1">
-                    <span>SYMPHONY OF BEYOND</span>
-                    <span class="text-rose-600 font-bold">WUTHERING</span>
+                    <img id="polaroid-img-4" src="https://images.rpgsite.net/image/da49c9a1/155211/original/wuthering-waves_20250718_phrolova-1.jpg" alt="Phrolova beyond" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Visual Content & Audio Manager -->
+    <!-- Manager Modal -->
     <section id="imageManager" class="hidden fixed inset-0 z-[100] bg-black/85 backdrop-blur-md p-4 overflow-y-auto">
-        <div class="max-w-3xl mx-auto my-8 bg-[#121217] border border-rose-900/60 rounded-xl shadow-2xl p-5 md:p-7">
-            <div class="flex items-center justify-between gap-4 mb-5">
-                <div>
-                    <p class="text-rose-400 text-xs tracking-[.25em]">FRACTSIDUS / GITHUB CONTROL</p>
-                    <h2 class="cinzel-font text-xl md:text-2xl text-white">Gestor de Imágenes y Canciones</h2>
-                </div>
-                <button id="closeImageManager" class="text-gray-400 hover:text-white text-2xl px-2" type="button" aria-label="Cerrar">×</button>
+        <div class="max-w-2xl mx-auto my-8 bg-[#121217] border border-rose-900/60 rounded-xl shadow-2xl p-5 md:p-7 space-y-5">
+            <div class="flex items-center justify-between">
+                <h2 class="cinzel-font text-xl text-white">Editar Contenido Multimedial</h2>
+                <button id="closeImageManager" class="text-gray-400 hover:text-white text-2xl">×</button>
             </div>
 
-            <div id="imagePasswordArea" class="space-y-4">
-                <p class="text-sm text-gray-300">Introduce las credenciales de GitHub para actualizar imágenes y canciones sin necesidad de programar:</p>
-                <div class="space-y-3">
-                    <input id="ghRepo" type="text" placeholder="Repositorio (ej. usuario/repositorio)" class="image-manager-input">
-                    <input id="ghToken" type="password" placeholder="GitHub Personal Access Token (PAT)" class="image-manager-input">
-                    <button id="unlockImageManager" type="button" class="w-full bg-rose-700 hover:bg-rose-600 py-3 rounded-lg font-bold text-white transition">Conectar con GitHub</button>
+            <p class="text-xs text-gray-400">Pega aquí los enlaces directos de **ImgBB** para las imágenes y los enlaces directos de audios (`.mp3`):</p>
+
+            <div class="space-y-4 max-h-[400px] overflow-y-auto pr-2">
+                <div class="border border-white/10 p-3 rounded-lg space-y-2">
+                    <h3 class="text-rose-400 text-sm font-bold">Imágenes (Enlaces de ImgBB)</h3>
+                    <input id="input-img-1" type="url" placeholder="URL Imagen 1 (ImgBB)" class="image-manager-input">
+                    <input id="input-img-2" type="url" placeholder="URL Imagen 2 (ImgBB)" class="image-manager-input">
+                    <input id="input-img-3" type="url" placeholder="URL Imagen 3 (ImgBB)" class="image-manager-input">
+                    <input id="input-img-4" type="url" placeholder="URL Imagen 4 (ImgBB)" class="image-manager-input">
                 </div>
-                <p id="imagePasswordError" class="hidden text-sm text-rose-400">Datos incorrectos o sin permisos.</p>
+
+                <div class="border border-white/10 p-3 rounded-lg space-y-2">
+                    <h3 class="text-rose-400 text-sm font-bold">Canciones (Enlaces MP3)</h3>
+                    <input id="track-name-1" type="text" placeholder="Nombre Canción 1" class="image-manager-input mb-1">
+                    <input id="track-url-1" type="url" placeholder="URL .mp3 Canción 1" class="image-manager-input">
+                    <hr class="border-white/10 my-2">
+                    <input id="track-name-2" type="text" placeholder="Nombre Canción 2" class="image-manager-input mb-1">
+                    <input id="track-url-2" type="url" placeholder="URL .mp3 Canción 2" class="image-manager-input">
+                </div>
             </div>
 
-            <div id="imageEditorArea" class="hidden space-y-6">
-                <!-- Tabs for easily editing images vs tracks -->
-                <div class="flex border-b border-white/10 gap-4">
-                    <button id="tabImagesBtn" class="pb-2 border-b-2 border-rose-500 font-bold text-rose-400 text-sm">Editar Imágenes</button>
-                    <button id="tabTracksBtn" class="pb-2 border-b-2 border-transparent text-gray-400 hover:text-white text-sm">Editar Canciones</button>
-                </div>
-
-                <!-- Images Panel -->
-                <div id="tabImagesPanel" class="space-y-4">
-                    <p class="text-xs text-gray-400">Pega enlaces de imágenes o sube un archivo directamente.</p>
-                    <div id="imageEditorRows" class="space-y-3 max-h-[350px] overflow-y-auto pr-2"></div>
-                </div>
-
-                <!-- Tracks Panel -->
-                <div id="tabTracksPanel" class="hidden space-y-4">
-                    <p class="text-xs text-gray-400">Edita los títulos y enlaces o sube nuevos archivos de audio (.mp3):</p>
-                    <div id="trackEditorRows" class="space-y-3 max-h-[350px] overflow-y-auto pr-2"></div>
-                    <button id="addNewTrackRow" type="button" class="text-xs bg-rose-950/60 hover:bg-rose-900 border border-rose-800 text-rose-300 px-3 py-2 rounded font-bold">+ Añadir otra canción</button>
-                </div>
-
-                <div class="pt-3 border-t border-white/10 flex flex-col gap-2">
-                    <button id="saveManagedImages" type="button" class="bg-rose-700 hover:bg-rose-600 text-white font-bold px-5 py-3 rounded-lg transition">Guardar y Sincronizar en GitHub</button>
-                    <p id="imageSaveStatus" class="text-xs text-emerald-400" aria-live="polite"></p>
-                </div>
-            </div>
+            <button id="saveChanges" type="button" class="w-full bg-rose-700 hover:bg-rose-600 text-white font-bold py-3 rounded-lg">Aplicar Cambios</button>
+            <p id="saveMsg" class="text-xs text-emerald-400 text-center hidden">¡Cambios aplicados correctamente!</p>
         </div>
     </section>
 
-    <footer class="relative z-20 flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-6 border-t border-white/10 bg-black/60 backdrop-blur-md text-xs text-gray-500 gap-4">
-        <div class="flex items-center space-x-4">
-            <span class="text-rose-500 font-bold">05</span>
-            <span class="tracking-widest uppercase font-semibold text-gray-400">WUWA 动态</span>
-            <span>— Phrolova Interactive Experience</span>
-        </div>
-        <div class="font-mono text-rose-500/80 tracking-widest">07042026</div>
+    <footer class="relative z-20 flex justify-between items-center px-6 md:px-12 py-6 border-t border-white/10 bg-black/60 backdrop-blur-md text-xs text-gray-500">
+        <div>WUWA 动态 — Phrolova Interactive Experience</div>
+        <div class="font-mono text-rose-500/80">07042026</div>
     </footer>
 
     <script>
-        // --- Red Thread Canvas Effect ---
+        // --- Canvas Threads ---
         const canvas = document.getElementById('threadCanvas');
         const ctx = canvas.getContext('2d');
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            drawThreads();
-        }
-
+        function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; drawThreads(); }
         let showThreads = true;
-
-        function getElementCenter(el) {
-            const rect = el.getBoundingClientRect();
-            return { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
-        }
-
+        function getElementCenter(el) { const rect = el.getBoundingClientRect(); return { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 }; }
         function drawThreads() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             if (!showThreads) return;
@@ -304,360 +250,66 @@
             const pin = document.getElementById('centralPin');
             if (!pin || polaroids.length === 0) return;
             const pinCenter = getElementCenter(pin);
-
-            ctx.strokeStyle = '#be123c';
-            ctx.lineWidth = 2.5;
-            ctx.shadowColor = '#f43f5e';
-            ctx.shadowBlur = 8;
-
+            ctx.strokeStyle = '#be123c'; ctx.lineWidth = 2.5; ctx.shadowColor = '#f43f5e'; ctx.shadowBlur = 8;
             polaroids.forEach(p => {
                 const pCenter = getElementCenter(p);
-                ctx.beginPath();
-                ctx.moveTo(pinCenter.x, pinCenter.y);
+                ctx.beginPath(); ctx.moveTo(pinCenter.x, pinCenter.y);
                 ctx.quadraticCurveTo((pinCenter.x + pCenter.x) / 2, (pinCenter.y + pCenter.y) / 2, pCenter.x, pCenter.y);
                 ctx.stroke();
             });
         }
-
         window.addEventListener('resize', resizeCanvas);
         window.addEventListener('load', () => { resizeCanvas(); setTimeout(resizeCanvas, 200); });
-
-        const toggleBtn = document.getElementById('toggleThreadsBtn');
-        toggleBtn.addEventListener('click', () => {
+        document.getElementById('toggleThreadsBtn').addEventListener('click', () => {
             showThreads = !showThreads;
-            if (showThreads) {
-                drawThreads();
-                toggleBtn.classList.replace('bg-zinc-800', 'bg-rose-600');
-                toggleBtn.querySelector('span:last-child').textContent = 'Ocultar Hilos Rojos';
-            } else {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                toggleBtn.classList.replace('bg-rose-600', 'bg-zinc-800');
-                toggleBtn.querySelector('span:last-child').textContent = 'Mostrar Hilos Rojos';
-            }
+            if (showThreads) drawThreads(); else ctx.clearRect(0, 0, canvas.width, canvas.height);
         });
 
-        // --- Global Music System ---
-        let globalTracks = [
+        // --- Audio System ---
+        let tracks = [
             { name: 'Phrolova — Track 01', src: 'assets/0.mp3' },
-            { name: 'Phrolova — Track 02', src: 'assets/1.mp3' },
-            { name: 'Phrolova — Track 03', src: 'assets/2.mp3' }
+            { name: 'Phrolova — Track 02', src: 'assets/1.mp3' }
         ];
-
         const audio = document.getElementById('musicAudio');
-        const playButton = document.getElementById('playPause');
-        const prevButton = document.getElementById('prevTrack');
-        const nextButton = document.getElementById('nextTrack');
-        const muteButton = document.getElementById('muteTrack');
-        const seekBar = document.getElementById('seekBar');
-        const volumeBar = document.getElementById('volumeBar');
-        const volumeValue = document.getElementById('volumeValue');
-        const currentTimeLabel = document.getElementById('currentTime');
-        const durationLabel = document.getElementById('durationTime');
         const trackName = document.getElementById('trackName');
-        const status = document.getElementById('playerStatus');
         let currentTrack = 0;
-        let seeking = false;
 
-        const formatTime = seconds => {
-            if (!Number.isFinite(seconds)) return '0:00';
-            const mins = Math.floor(seconds / 60);
-            const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
-            return `${mins}:${secs}`;
-        };
-
-        function loadTrack(index, autoplay = false) {
-            if (!globalTracks.length) return;
-            currentTrack = (index + globalTracks.length) % globalTracks.length;
-            audio.src = globalTracks[currentTrack].src;
+        function loadTrack(index) {
+            currentTrack = (index + tracks.length) % tracks.length;
+            audio.src = tracks[currentTrack].src;
+            trackName.textContent = tracks[currentTrack].name;
             audio.load();
-            trackName.textContent = globalTracks[currentTrack].name;
-            currentTimeLabel.textContent = '0:00';
-            durationLabel.textContent = '0:00';
-            seekBar.value = 0;
-            status.textContent = 'Listo para reproducir';
-            if (autoplay) playAudio();
         }
-
-        async function playAudio() {
-            try {
-                await audio.play();
-            } catch (error) {
-                status.textContent = 'No se pudo reproducir la canción.';
-            }
-        }
-
-        playButton.addEventListener('click', () => {
-            if (audio.paused) playAudio();
-            else audio.pause();
+        document.getElementById('playPause').addEventListener('click', () => {
+            if (audio.paused) audio.play(); else audio.pause();
         });
-        prevButton.addEventListener('click', () => loadTrack(currentTrack - 1, true));
-        nextButton.addEventListener('click', () => loadTrack(currentTrack + 1, true));
+        document.getElementById('prevTrack').addEventListener('click', () => loadTrack(currentTrack - 1));
+        document.getElementById('nextTrack').addEventListener('click', () => loadTrack(currentTrack + 1));
+        loadTrack(0);
 
-        audio.addEventListener('play', () => {
-            playButton.textContent = 'Ⅱ';
-            status.textContent = 'Reproduciendo';
+        // --- Manager UI ---
+        const manager = document.getElementById('imageManager');
+        document.getElementById('openImageManager').addEventListener('click', () => manager.classList.remove('hidden'));
+        document.getElementById('closeImageManager').addEventListener('click', () => manager.classList.add('hidden'));
+
+        document.getElementById('saveChanges').addEventListener('click', () => {
+            for (let i = 1; i <= 4; i++) {
+                const url = document.getElementById(`input-img-${i}`).value.trim();
+                if (url) document.getElementById(`polaroid-img-${i}`).src = url;
+            }
+            const t1Name = document.getElementById('track-name-1').value.trim();
+            const t1Url = document.getElementById('track-url-1').value.trim();
+            if (t1Url) tracks[0] = { name: t1Name || 'Canción 1', src: t1Url };
+
+            const t2Name = document.getElementById('track-name-2').value.trim();
+            const t2Url = document.getElementById('track-url-2').value.trim();
+            if (t2Url) tracks[1] = { name: t2Name || 'Canción 2', src: t2Url };
+
+            loadTrack(0);
+            const msg = document.getElementById('saveMsg');
+            msg.classList.remove('hidden');
+            setTimeout(() => { msg.classList.add('hidden'); manager.classList.add('hidden'); }, 1200);
         });
-        audio.addEventListener('pause', () => {
-            playButton.textContent = '▶';
-            if (audio.currentTime > 0 && !audio.ended) status.textContent = 'En pausa';
-        });
-        audio.addEventListener('loadedmetadata', () => { durationLabel.textContent = formatTime(audio.duration); });
-        audio.addEventListener('timeupdate', () => {
-            if (!seeking && Number.isFinite(audio.duration) && audio.duration > 0) {
-                seekBar.value = (audio.currentTime / audio.duration) * 100;
-            }
-            currentTimeLabel.textContent = formatTime(audio.currentTime);
-        });
-        audio.addEventListener('ended', () => loadTrack(currentTrack + 1, true));
-
-        seekBar.addEventListener('input', () => { seeking = true; });
-        seekBar.addEventListener('change', () => {
-            if (Number.isFinite(audio.duration)) audio.currentTime = (Number(seekBar.value) / 100) * audio.duration;
-            seeking = false;
-        });
-
-        volumeBar.addEventListener('input', () => {
-            audio.volume = Number(volumeBar.value);
-            volumeValue.textContent = Math.round(audio.volume * 100) + '%';
-        });
-        muteButton.addEventListener('click', () => {
-            audio.muted = !audio.muted;
-            muteButton.textContent = audio.muted ? '×' : '♫';
-        });
-
-        // Try loading configuration from config.json automatically on startup
-        fetch('config.json')
-            .then(res => res.json())
-            .then(data => {
-                if (data.images && data.images.length) {
-                    data.images.forEach((url, i) => {
-                        const img = document.getElementById(`polaroid-img-${i + 1}`);
-                        if (img && url) img.src = url;
-                    });
-                }
-                if (data.tracks && data.tracks.length) {
-                    globalTracks = data.tracks;
-                }
-                loadTrack(0, false);
-            })
-            .catch(() => { loadTrack(0, false); });
-
-        // --- GitHub Easy Manager Integration ---
-        (() => {
-            const manager = document.getElementById('imageManager');
-            const passwordArea = document.getElementById('imagePasswordArea');
-            const editorArea = document.getElementById('imageEditorArea');
-            const repoInput = document.getElementById('ghRepo');
-            const tokenInput = document.getElementById('ghToken');
-            const errorMsg = document.getElementById('imagePasswordError');
-            const imgRows = document.getElementById('imageEditorRows');
-            const trackRows = document.getElementById('trackEditorRows');
-            const saveStatus = document.getElementById('imageSaveStatus');
-            const tabImagesBtn = document.getElementById('tabImagesBtn');
-            const tabTracksBtn = document.getElementById('tabTracksBtn');
-            const tabImagesPanel = document.getElementById('tabImagesPanel');
-            const tabTracksPanel = document.getElementById('tabTracksPanel');
-
-            const cards = [
-                document.getElementById('polaroid-img-1'),
-                document.getElementById('polaroid-img-2'),
-                document.getElementById('polaroid-img-3'),
-                document.getElementById('polaroid-img-4')
-            ];
-
-            // Tab Switching
-            tabImagesBtn.addEventListener('click', () => {
-                tabImagesPanel.classList.remove('hidden');
-                tabTracksPanel.classList.add('hidden');
-                tabImagesBtn.className = 'pb-2 border-b-2 border-rose-500 font-bold text-rose-400 text-sm';
-                tabTracksBtn.className = 'pb-2 border-b-2 border-transparent text-gray-400 hover:text-white text-sm';
-            });
-
-            tabTracksBtn.addEventListener('click', () => {
-                tabTracksPanel.classList.remove('hidden');
-                tabImagesPanel.classList.add('hidden');
-                tabTracksBtn.className = 'pb-2 border-b-2 border-rose-500 font-bold text-rose-400 text-sm';
-                tabImagesBtn.className = 'pb-2 border-b-2 border-transparent text-gray-400 hover:text-white text-sm';
-            });
-
-            document.getElementById('openImageManager').addEventListener('click', () => {
-                manager.classList.remove('hidden');
-                passwordArea.classList.remove('hidden');
-                editorArea.classList.add('hidden');
-                errorMsg.classList.add('hidden');
-            });
-
-            document.getElementById('closeImageManager').addEventListener('click', () => manager.classList.add('hidden'));
-
-            async function verifyGitHub() {
-                const repo = repoInput.value.trim();
-                const token = tokenInput.value.trim();
-                if (!repo || !token) {
-                    errorMsg.textContent = 'Ingresa el repositorio y el Token.';
-                    errorMsg.classList.remove('hidden');
-                    return;
-                }
-
-                try {
-                    const res = await fetch(`https://api.github.com/repos/${repo}`, {
-                        headers: { Authorization: `token ${token}` }
-                    });
-                    if (!res.ok) throw new Error();
-                    
-                    errorMsg.classList.add('hidden');
-                    passwordArea.classList.add('hidden');
-                    editorArea.classList.remove('hidden');
-                    buildImgRows();
-                    buildTrackRows();
-                } catch {
-                    errorMsg.textContent = 'Credenciales no válidas o sin permiso.';
-                    errorMsg.classList.remove('hidden');
-                }
-            }
-
-            document.getElementById('unlockImageManager').addEventListener('click', verifyGitHub);
-
-            function buildImgRows() {
-                imgRows.innerHTML = '';
-                cards.forEach((img, index) => {
-                    const row = document.createElement('div');
-                    row.className = 'border border-white/10 rounded-lg p-3 space-y-2 bg-black/30';
-                    row.innerHTML = `
-                        <label class="block text-sm font-bold text-rose-300">Imagen Polaroid ${index + 1}</label>
-                        <input class="image-manager-input image-url" data-index="${index}" type="url" value="${img.src}" placeholder="Enlace URL de la imagen">
-                        <input class="image-manager-input image-file" data-index="${index}" type="file" accept="image/*">
-                    `;
-                    imgRows.appendChild(row);
-                });
-            }
-
-            function buildTrackRows() {
-                trackRows.innerHTML = '';
-                globalTracks.forEach((t, index) => addTrackRow(t.name, t.src, index));
-            }
-
-            function addTrackRow(name = '', src = '', index = null) {
-                const i = index !== null ? index : trackRows.children.length;
-                const row = document.createElement('div');
-                row.className = 'border border-white/10 rounded-lg p-3 space-y-2 bg-black/30 track-row';
-                row.innerHTML = `
-                    <label class="block text-sm font-bold text-rose-300">Canción ${i + 1}</label>
-                    <input class="image-manager-input track-name" type="text" value="${name}" placeholder="Nombre de la canción (ej. Phrolova Theme)">
-                    <input class="image-manager-input track-url" type="url" value="${src}" placeholder="Enlace directo audio .mp3">
-                    <input class="image-manager-input track-file" type="file" accept="audio/*">
-                `;
-                trackRows.appendChild(row);
-            }
-
-            document.getElementById('addNewTrackRow').addEventListener('click', () => addTrackRow());
-
-            function fileToBase64(file) {
-                return new Promise((resolve, reject) => {
-                    const reader = new FileReader();
-                    reader.readAsDataURL(file);
-                    reader.onload = () => resolve(reader.result.split(',')[1]);
-                    reader.onerror = error => reject(error);
-                });
-            }
-
-            async function uploadFileToGitHub(path, file, message, repo, token) {
-                const contentBase64 = await fileToBase64(file);
-                let sha = null;
-                const checkRes = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
-                    headers: { Authorization: `token ${token}` }
-                });
-                if (checkRes.ok) {
-                    const data = await checkRes.json();
-                    sha = data.sha;
-                }
-
-                const putRes = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
-                    method: 'PUT',
-                    headers: { Authorization: `token ${token}`, 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ message, content: contentBase64, sha })
-                });
-
-                if (!putRes.ok) throw new Error('Error al subir a GitHub');
-                const putData = await putRes.json();
-                return putData.content.download_url;
-            }
-
-            document.getElementById('saveManagedImages').addEventListener('click', async () => {
-                saveStatus.textContent = 'Subiendo y actualizando repositorio en GitHub...';
-                saveStatus.className = 'text-xs text-yellow-400';
-                const repo = repoInput.value.trim();
-                const token = tokenInput.value.trim();
-
-                try {
-                    const newImages = [];
-                    const newTracks = [];
-
-                    // Process Images
-                    for (let i = 0; i < cards.length; i++) {
-                        const fileInput = imgRows.querySelector(`.image-file[data-index="${i}"]`);
-                        const urlInput = imgRows.querySelector(`.image-url[data-index="${i}"]`);
-                        let finalUrl = urlInput.value.trim();
-
-                        if (fileInput.files && fileInput.files[0]) {
-                            const file = fileInput.files[0];
-                            const path = `assets/images/polaroid_${i + 1}_${Date.now()}.${file.name.split('.').pop()}`;
-                            finalUrl = await uploadFileToGitHub(path, file, `Subir imagen ${i + 1}`, repo, token);
-                        }
-                        cards[i].src = finalUrl;
-                        newImages.push(finalUrl);
-                    }
-
-                    // Process Tracks
-                    const rowElements = trackRows.querySelectorAll('.track-row');
-                    for (let i = 0; i < rowElements.length; i++) {
-                        const nameInput = rowElements[i].querySelector('.track-name');
-                        const urlInput = rowElements[i].querySelector('.track-url');
-                        const fileInput = rowElements[i].querySelector('.track-file');
-
-                        let finalSrc = urlInput.value.trim();
-                        const name = nameInput.value.trim() || `Track ${i + 1}`;
-
-                        if (fileInput.files && fileInput.files[0]) {
-                            const file = fileInput.files[0];
-                            const path = `assets/audio/track_${i + 1}_${Date.now()}.${file.name.split('.').pop()}`;
-                            finalSrc = await uploadFileToGitHub(path, file, `Subir audio ${name}`, repo, token);
-                        }
-                        if (finalSrc) {
-                            newTracks.push({ name, src: finalSrc });
-                        }
-                    }
-
-                    globalTracks = newTracks;
-                    loadTrack(0, false);
-
-                    // Upload JSON config to keep repo in sync permanently
-                    const configJSON = JSON.stringify({ images: newImages, tracks: newTracks }, null, 2);
-                    const configBase64 = btoa(unescape(encodeURIComponent(configJSON)));
-
-                    let sha = null;
-                    const checkRes = await fetch(`https://api.github.com/repos/${repo}/contents/config.json`, {
-                        headers: { Authorization: `token ${token}` }
-                    });
-                    if (checkRes.ok) {
-                        const data = await checkRes.json();
-                        sha = data.sha;
-                    }
-
-                    await fetch(`https://api.github.com/repos/${repo}/contents/config.json`, {
-                        method: 'PUT',
-                        headers: { Authorization: `token ${token}`, 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ message: 'Actualizar configuración global', content: configBase64, sha })
-                    });
-
-                    saveStatus.textContent = '¡Todo guardado e integrado en GitHub exitosamente!';
-                    saveStatus.className = 'text-xs text-emerald-400';
-                } catch (err) {
-                    console.error(err);
-                    saveStatus.textContent = 'Ocurrió un error al guardar en GitHub.';
-                    saveStatus.className = 'text-xs text-rose-400';
-                }
-            });
-        })();
     </script>
 </body>
 </html>
